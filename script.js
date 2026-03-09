@@ -71,7 +71,7 @@ function submitFeedback() {
     suggestions
   };
 
-  fetch("http://localhost:7000/feedback", {
+  fetch("https://clientreview-tnx.onrender.com/feedback", {
 
     method: "POST",
     headers: {
