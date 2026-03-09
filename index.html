@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TechNovaX – Client Feedback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- 🔷 MAIN WRAPPER -->
+  <div class="app-container">
+
+    <!-- 🔷 HEADER CONTAINER -->
+    <div class="header-box">
+      <h1>TechNovaX</h1>
+      <p>Your Feedback Drives Our Innovation</p>
+    </div>
+
+    <!-- 🔷 FORM CONTAINER -->
+    <div class="form-box">
+      
+      <input
+        type="text"
+        id="clientName"
+        placeholder="Enter Your Name"
+        required
+      />
+<div class="rating">
+  <p>Service Quality</p>
+  <div class="stars" data-type="quality"></div>
+</div>
+
+<div class="rating">
+  <p>Price vs Service Satisfaction</p>
+  <div class="stars" data-type="value"></div>
+</div>
+
+<div class="rating">
+  <p>Did the Service Meet Your Needs?</p>
+  <div class="stars" data-type="requirement"></div>
+</div>
+
+<div class="rating">
+  <p>Delivery Time Satisfaction</p>
+  <div class="stars" data-type="timeliness"></div>
+</div>
+
+<textarea
+  id="suggestions"
+  placeholder="Share your feedback or suggestions..."
+></textarea>
+
+<div id="errorMsg" class="error-msg"></div>
+
+<button type="button" onclick="submitFeedback()">
+  Share Your Experience
+</button>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
